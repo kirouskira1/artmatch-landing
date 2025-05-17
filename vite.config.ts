@@ -46,12 +46,12 @@ export default defineConfig({
         theme_color: '#6a3ea1',
         icons: [
           {
-            src: '/artmatch-freestyle/images/artmatch-192.png',
+            src: `${base}images/artmatch-192.png`,
             sizes: '192x192',
             type: 'image/png'
           },
           {
-            src: '/artmatch-freestyle/images/artmatch-512.png',
+            src: `${base}images/artmatch-512.png`,
             sizes: '512x512',
             type: 'image/png',
             purpose: 'any maskable'
