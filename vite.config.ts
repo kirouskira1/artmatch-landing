@@ -5,7 +5,7 @@ import path from "path";
 
 // https://vitejs.dev/config/
 const isProduction = process.env.NODE_ENV === 'production';
-const base = isProduction ? '/artmatch-freestyle/' : '/';
+const base = isProduction ? '/artmatch-landing/' : '/';
 
 export default defineConfig({
   base,
@@ -45,20 +45,21 @@ export default defineConfig({
         theme_color: '#6a3ea1',
         icons: [
           {
-            src: '/images/artmatch-192.svg',
+            src: `${base}images/artmatch-192.svg`,
             sizes: '192x192',
             type: 'image/svg+xml'
           },
           {
-            src: '/images/artmatch-512.svg',
+            src: `${base}images/artmatch-512.svg`,
             sizes: '512x512',
             type: 'image/svg+xml',
             purpose: 'any maskable'
           }
         ],
-        start_url: '/',
+        start_url: base,
         display: 'standalone',
-        background_color: '#ffffff'
+        background_color: '#ffffff',
+        scope: base
       }
     })
   ],

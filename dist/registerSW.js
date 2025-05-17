@@ -1,1 +1,1 @@
-if('serviceWorker' in navigator) {window.addEventListener('load', () => {navigator.serviceWorker.register('/artmatch-freestyle/sw.js', { scope: '/artmatch-freestyle/' })})}
+if('serviceWorker' in navigator) {window.addEventListener('load', () => {navigator.serviceWorker.register('/artmatch-landing/sw.js', { scope: '/artmatch-landing/' })})}
