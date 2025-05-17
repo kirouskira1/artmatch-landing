@@ -6,7 +6,7 @@ import path from "path";
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => {
   const isProduction = mode === 'production';
-  const base = isProduction ? './' : '/';
+  const base = isProduction ? '/artmatch-freestyle/' : '/';
 
   return {
     base,
