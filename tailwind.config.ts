@@ -57,35 +57,71 @@ export default {
 				ring: 'hsl(var(--ring))',
 				background: 'hsl(var(--background))',
 				foreground: 'hsl(var(--foreground))',
+				// Cores principais
 				primary: {
-					50: "#f3f1ff",
-					100: "#e9e5ff",
-					200: "#d5cfff",
-					300: "#b7a9ff",
-					400: "#9478ff",
-					500: "#7341ff",
-					600: "#631bff",
-					700: "#611bf8",
-					800: "#4607d0",
-					900: "#3c08aa",
-					950: "#220174",
+					50: "#f4f0ff",
+					100: "#e9dfff",
+					200: "#d5c0ff",
+					300: "#b991ff",
+					400: "#9d5aff",
+					500: "#7e2afc",
+					600: "#6d11f2",
+					700: "#611bf8", // Cor principal mantida
+					800: "#4f0edb",
+					900: "#3f0cb3",
+					950: "#250077",
 					DEFAULT: "#611bf8"
 				},
+				// Cores secundárias inspiradas na bandeira do Brasil
 				secondary: {
-					DEFAULT: 'hsl(var(--secondary))',
-					foreground: 'hsl(var(--secondary-foreground))'
+					DEFAULT: '#FFD700', // Amarelo ouro
+					foreground: '#1a1a1a',
+					50: "#fffae6",
+					100: "#fff2cc",
+					200: "#ffe699",
+					300: "#ffd966",
+					400: "#ffcc33",
+					500: "#ffc107",
+					600: "#e6a800",
+					700: "#b38600",
+					800: "#806000",
+					900: "#4d3a00"
+				},
+				// Cores de destaque
+				accent: {
+					DEFAULT: '#2E8B57', // Verde floresta
+					foreground: '#ffffff',
+					50: "#f0f9f5",
+					100: "#d1f0e3",
+					200: "#a3e1c7",
+					300: "#74d2ab",
+					400: "#46c38f",
+					500: "#2E8B57",
+					600: "#236e45",
+					700: "#1a5234",
+					800: "#113622",
+					900: "#081b11"
+				},
+				// Cores de destaque adicionais
+				tertiary: {
+					DEFAULT: '#FF6B6B', // Vermelho vibrante
+					foreground: '#ffffff'
+				},
+				success: {
+					DEFAULT: '#00C9A7', // Verde água
+					foreground: '#ffffff'
+				},
+				warning: {
+					DEFAULT: '#FF9E7D', // Laranja suave
+					foreground: '#1a1a1a'
 				},
 				destructive: {
-					DEFAULT: 'hsl(var(--destructive))',
-					foreground: 'hsl(var(--destructive-foreground))'
+					DEFAULT: '#FF3860', // Vermelho vibrante
+					foreground: '#ffffff'
 				},
 				muted: {
 					DEFAULT: 'hsl(var(--muted))',
 					foreground: 'hsl(var(--muted-foreground))'
-				},
-				accent: {
-					DEFAULT: 'hsl(var(--accent))',
-					foreground: 'hsl(var(--accent-foreground))'
 				},
 				popover: {
 					DEFAULT: 'hsl(var(--popover))',

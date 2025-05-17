@@ -1,73 +1,108 @@
-# Welcome to your Lovable project
+# Artmatch - Conexão entre Artistas e Oportunidades Culturais
 
-## Project info
+![Artmatch Banner](/public/images/artmatch-social.png)
 
-**URL**: https://lovable.dev/projects/10fd086f-6551-4f94-9cc7-cba8dc793c0d
+## Sobre o Projeto
 
-## How can I edit this code?
+Artmatch é uma plataforma inovadora que conecta artistas a oportunidades culturais como editais, exposições e projetos. Utilizando um algoritmo inteligente de compatibilidade, o sistema facilita o encontro entre talentos artísticos e as melhores oportunidades para seu perfil.
 
-There are several ways of editing your application.
+O projeto nasceu da vivência de Adriano Rodrigues, CEO e desenvolvedor, ao perceber a dificuldade que artistas enfrentam para encontrar e compreender editais culturais. Com o Artmatch, essa barreira é eliminada, criando uma ponte entre talento e oportunidade.
 
-**Use Lovable**
+### Principais Características
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/10fd086f-6551-4f94-9cc7-cba8dc793c0d) and start prompting.
+- **Para Artistas:**
+  - Criação de perfil e portfólio completo
+  - Feed personalizado de editais com alta compatibilidade
+  - Inscrição simplificada diretamente pela plataforma
+  - Acompanhamento do status das inscrições
+  - Feedback para melhorar o perfil
 
-Changes made via Lovable will be committed automatically to this repo.
+- **Para Organizadores:**
+  - Criação e publicação de editais estruturados
+  - Descoberta de artistas altamente compatíveis
+  - Ferramentas avançadas de triagem
+  - Gerenciamento de inscrições em um só lugar
+  - Relatórios e métricas detalhadas
 
-**Use your preferred IDE**
+## Tecnologias Utilizadas
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+- **Frontend:** React, TypeScript, Vite, Tailwind CSS
+- **Backend:** Supabase (autenticação, banco de dados, armazenamento)
+- **UI/UX:** shadcn/ui, Lucide React (ícones)
+- **PWA:** Service Worker para funcionalidade offline
+- **Bibliotecas:** date-fns, react-hook-form, zod, swiper
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+## Como Executar Localmente
 
-Follow these steps:
+### Pré-requisitos
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+- Node.js (v14 ou superior)
+- npm ou yarn
+- Conta no Supabase
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+### Instalação
 
-# Step 3: Install the necessary dependencies.
-npm i
+```bash
+# Clone o repositório
+git clone https://github.com/seu-usuario/artmatch.git
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
+# Entre no diretório
+cd artmatch
+
+# Instale as dependências
+npm install
+# ou
+yarn install
+
+# Configure as variáveis de ambiente
+# Crie um arquivo .env com:
+# VITE_SUPABASE_URL=sua_url_supabase
+# VITE_SUPABASE_ANON_KEY=sua_chave_anonima
+
+# Execute o script SQL no Supabase
+# Importe o arquivo supabase-schema.sql no Editor SQL do Supabase
+
+# Inicie o servidor de desenvolvimento
 npm run dev
+# ou
+yarn dev
 ```
 
-**Edit a file directly in GitHub**
+Acesse: `http://localhost:8080`
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+## Configuração do Supabase
 
-**Use GitHub Codespaces**
+1. Crie um projeto no [Supabase](https://supabase.com/)
+2. Copie a URL e a chave anônima do projeto
+3. Configure o arquivo .env com essas credenciais
+4. Execute o script SQL (supabase-schema.sql) para criar as tabelas
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+## PWA (Progressive Web App)
 
-## What technologies are used for this project?
+Artmatch funciona como um Progressive Web App, permitindo:
 
-This project is built with:
+- Instalação no dispositivo
+- Funcionalidade offline básica
+- Experiência app-like em dispositivos móveis
+- Carregamento rápido
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+## Implantação
 
-## How can I deploy this project?
+Este projeto pode ser implantado em serviços como:
 
-Simply open [Lovable](https://lovable.dev/projects/10fd086f-6551-4f94-9cc7-cba8dc793c0d) and click on Share -> Publish.
+- Vercel
+- Netlify
+- Firebase Hosting
+- GitHub Pages
 
-## Can I connect a custom domain to my Lovable project?
+## Suporte e Contribuições
 
-Yes, you can!
+Para dúvidas, sugestões ou problemas, entre em contato:
+- Email: work.adrian.rodrigues@gmail.com
+- LinkedIn: [Adriano Rodrigues](https://www.linkedin.com/in/adriano-rodrigues-ads/)
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+---
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+Desenvolvido pelo time Artmatch, uma iniciativa apoiada pelo Porto Digital e Prefeitura do Recife.
+
+© 2023-2024 Artmatch. Todos os direitos reservados.

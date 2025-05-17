@@ -1,0 +1,56 @@
+.swiper {
+  width: 100%;
+  padding-bottom: 40px;
+}
+
+.swiper-slide {
+  height: auto;
+  display: flex;
+  justify-content: center;
+}
+
+.swiper-pagination {
+  bottom: 0 !important;
+}
+
+.swiper-pagination-bullet {
+  background: #cbd5e1;
+  opacity: 0.5;
+}
+
+.swiper-pagination-bullet-active {
+  background: var(--primary-600);
+  opacity: 1;
+}
+
+/* Estilos para os botões de navegação (opcional) */
+.swiper-button-next,
+.swiper-button-prev {
+  color: var(--primary-600);
+  background: rgba(255, 255, 255, 0.8);
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-button-next:after,
+.swiper-button-prev:after {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/* Ajustes para o modo escuro */
+@media (prefers-color-scheme: dark) {
+  .swiper-pagination-bullet {
+    background: #64748b;
+  }
+  
+  .swiper-button-next,
+  .swiper-button-prev {
+    background: rgba(30, 41, 59, 0.8);
+    color: var(--primary-400);
+  }
+}

@@ -1,0 +1,6 @@
+<svg width="512" height="512" xmlns="http://www.w3.org/2000/svg">
+  <rect width="512" height="512" fill="#4f46e5" rx="96" ry="96"/>
+  <text x="256" y="280" font-family="Arial" font-size="160" font-weight="bold" text-anchor="middle" fill="#ffffff">AM</text>
+  <path d="M256 370 L320 290 L370 340 L430 240" stroke="#ffffff" stroke-width="16" fill="none" stroke-linecap="round"/>
+  <path d="M80 340 L160 240 L240 320" stroke="#ffffff" stroke-width="16" fill="none" stroke-linecap="round"/>
+</svg> 
