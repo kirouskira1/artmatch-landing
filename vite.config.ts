@@ -46,14 +46,14 @@ export default defineConfig({
         theme_color: '#6a3ea1',
         icons: [
           {
-            src: `${base}images/artmatch-192.png`,
+            src: `${base}images/artmatch-192.svg`,
             sizes: '192x192',
-            type: 'image/png'
+            type: 'image/svg+xml'
           },
           {
-            src: `${base}images/artmatch-512.png`,
+            src: `${base}images/artmatch-512.svg`,
             sizes: '512x512',
-            type: 'image/png',
+            type: 'image/svg+xml',
             purpose: 'any maskable'
           }
         ],
