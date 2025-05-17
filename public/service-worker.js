@@ -1,9 +1,12 @@
 const CACHE_NAME = 'artmatch-cache-v1';
+const BASE_PATH = '/artmatch-freestyle/';
 const urlsToCache = [
-  '/',
-  '/index.html',
-  '/manifest.json',
-  '/favicon.ico',
+  BASE_PATH,
+  `${BASE_PATH}index.html`,
+  `${BASE_PATH}manifest.json`,
+  `${BASE_PATH}favicon.ico`,
+  `${BASE_PATH}assets/index.css`,
+  `${BASE_PATH}assets/index.js`,
 ];
 
 // Install a service worker
