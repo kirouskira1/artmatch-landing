@@ -1,0 +1,8 @@
+A imagem do CEO Adriano Rodrigues deve ser colocada neste diretório com o nome "adriano-rodrigues.jpg".
+
+Para adicionar a imagem:
+1. Baixe a imagem do CEO
+2. Renomeie para "adriano-rodrigues.jpg"
+3. Coloque nesta pasta (pasta public)
+
+A imagem deve ter bordas arredondadas e combinar com o estilo do site.

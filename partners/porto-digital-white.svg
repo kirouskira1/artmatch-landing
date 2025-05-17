@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 150 24" width="150" height="24" preserveAspectRatio="xMidYMid meet">
+  <!-- Fundo branco com bordas arredondadas como o badge Beta -->
+  <rect width="150" height="24" fill="white" rx="4" ry="4"/>
+  
+  <!-- Logo Porto Digital -->
+  <g transform="translate(8, 6) scale(0.014)">
+    <path fill="#1450ef" d="M568.3,403.4h86.9v-173.7h-173.7v87.2c0,44.6-33.6,81.3-76.9,86.3h-96.9v87.2c0,48-38.9,86.9-86.9,86.9h-86.9v173.7h173.7v-87.2c0-48,38.9-86.9,86.9-86.9s86.9,38.9,86.9,86.9v87.2h173.7v-173.7h-86.9c-48,0-86.9-38.9-86.9-86.9h0s0,0,0,0h0c0-48,38.9-86.9,86.9-86.9Z"/>
+  </g>
+  
+  <!-- Texto Porto Digital -->
+  <g transform="translate(38, 16)">
+    <text font-family="Arial, sans-serif" font-weight="bold" font-size="12" fill="#0e004b">Porto Digital</text>
+  </g>
+</svg>
