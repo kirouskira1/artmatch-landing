@@ -31,19 +31,6 @@
   <link rel="manifest" href="/artmatch-freestyle/manifest.webmanifest"><script id="vite-plugin-pwa:register-sw" src="/artmatch-freestyle/registerSW.js"></script></head>
 
   <body>
-    <div id="root"></div>
-    <script>
-      if ('serviceWorker' in navigator) {
-        window.addEventListener('load', () => {
-          navigator.serviceWorker.register('/artmatch-freestyle/sw.js')
-            .then(registration => {
-              console.log('Service Worker registered with scope:', registration.scope);
-            })
-            .catch(error => {
-              console.error('Service Worker registration failed:', error);
-            });
-        });
-      }
-    </script>
+    <div id="root"></div>
   </body>
 </html>
