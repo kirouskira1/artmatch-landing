@@ -10,16 +10,16 @@
     <meta property="og:title" content="Artmatch - Conexão entre Artistas e Editais" />
     <meta property="og:description" content="Encontre editais culturais compatíveis com seu perfil artístico ou descubra os melhores talentos para seus projetos." />
     <meta property="og:type" content="website" />
-    <meta property="og:image" content="/images/artmatch-social.png" />
+    <meta property="og:image" content="%BASE_URL%images/artmatch-social.png" />
 
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:site" content="@artmatch" />
-    <meta name="twitter:image" content="/images/artmatch-social.png" />
+    <meta name="twitter:image" content="%BASE_URL%images/artmatch-social.png" />
 
     <!-- PWA Support -->
-    <link rel="manifest" href="manifest.json" />
+    <link rel="manifest" href="%BASE_URL%manifest.json" />
     <meta name="theme-color" content="#6a3ea1" />
-    <link rel="apple-touch-icon" href="images/artmatch-192.png">
+    <link rel="apple-touch-icon" href="%BASE_URL%images/artmatch-192.png">
 
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato&display=swap">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap">
@@ -28,11 +28,11 @@
 
   <body>
     <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
+    <script type="module" src="src/main.tsx"></script>
     <script>
       if ('serviceWorker' in navigator) {
         window.addEventListener('load', () => {
-          navigator.serviceWorker.register('/service-worker.js')
+          navigator.serviceWorker.register('%BASE_URL%sw.js')
             .then(registration => {
               console.log('Service Worker registered with scope:', registration.scope);
             })

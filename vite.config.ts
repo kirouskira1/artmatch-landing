@@ -6,10 +6,10 @@ import path from "path";
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => {
   const isProduction = mode === 'production';
-  const base = isProduction ? '/artmatch-freestyle/' : '/';
+  const base = isProduction ? './' : '/';
 
   return {
-    base: isProduction ? '/artmatch-freestyle/' : '/',
+    base,
     server: {
       host: "::",
       port: 8080,
@@ -41,16 +41,17 @@ export default defineConfig(({ mode }) => {
           short_name: 'Artmatch',
           description: 'Conexão entre Artistas e Editais',
           theme_color: '#6a3ea1',
-          start_url: '.',
+          start_url: '/Freestyle2.0/',
+          scope: '/Freestyle2.0/',
           display: 'standalone',
           icons: [
             {
-              src: 'images/artmatch-192.png',
+              src: '/Freestyle2.0/images/artmatch-192.png',
               sizes: '192x192',
               type: 'image/png'
             },
             {
-              src: 'images/artmatch-512.png',
+              src: '/Freestyle2.0/images/artmatch-512.png',
               sizes: '512x512',
               type: 'image/png',
               purpose: 'any maskable'
@@ -59,7 +60,7 @@ export default defineConfig(({ mode }) => {
         },
         workbox: {
           globPatterns: ['**/*.{js,css,html,ico,png,svg,jpg,jpeg}'],
-          navigateFallback: 'index.html',
+          navigateFallback: '/Freestyle2.0/index.html',
           runtimeCaching: [
             {
               urlPattern: /^https:\/\/fonts\.googleapis\.com\/.*/i,
