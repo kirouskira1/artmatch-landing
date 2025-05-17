@@ -84,6 +84,13 @@ export default defineConfig({
       },
       devOptions: {
         enabled: false
+      },
+      strategies: 'injectManifest',
+      srcDir: 'src',
+      filename: 'sw.js',
+      injectRegister: 'auto',
+      injectManifest: {
+        injectionPoint: undefined
       }
     })
   ],
