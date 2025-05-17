@@ -38,7 +38,6 @@ export default defineConfig({
     react(),
     VitePWA({
       registerType: 'autoUpdate',
-      includeAssets: ['favicon.ico', 'apple-touch-icon.png', 'masked-icon.svg'],
       manifest: {
         name: 'Artmatch',
         short_name: 'Artmatch',
@@ -46,51 +45,20 @@ export default defineConfig({
         theme_color: '#6a3ea1',
         icons: [
           {
-            src: `${base}images/artmatch-192.svg`,
+            src: '/images/artmatch-192.svg',
             sizes: '192x192',
             type: 'image/svg+xml'
           },
           {
-            src: `${base}images/artmatch-512.svg`,
+            src: '/images/artmatch-512.svg',
             sizes: '512x512',
             type: 'image/svg+xml',
             purpose: 'any maskable'
           }
         ],
-        start_url: base,
+        start_url: '/',
         display: 'standalone',
-        background_color: '#ffffff',
-        scope: base
-      },
-      workbox: {
-        navigateFallback: `${base}index.html`,
-        globPatterns: ['**/*.{js,css,html,ico,png,svg,webp}'],
-        runtimeCaching: [
-          {
-            urlPattern: /^https:\/\/fonts\.googleapis\.com\/.*/i,
-            handler: 'CacheFirst',
-            options: {
-              cacheName: 'google-fonts-cache',
-              expiration: {
-                maxEntries: 10,
-                maxAgeSeconds: 60 * 60 * 24 * 365 // 1 ano
-              },
-              cacheableResponse: {
-                statuses: [0, 200]
-              }
-            }
-          }
-        ]
-      },
-      devOptions: {
-        enabled: false
-      },
-      strategies: 'injectManifest',
-      srcDir: 'src',
-      filename: 'sw.js',
-      injectRegister: 'auto',
-      injectManifest: {
-        injectionPoint: undefined
+        background_color: '#ffffff'
       }
     })
   ],
