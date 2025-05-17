@@ -17,7 +17,7 @@
     <meta name="twitter:image" content="images/artmatch-social.png" />
 
     <!-- PWA Support -->
-    <link rel="manifest" href="manifest.json" />
+    <link rel="manifest" href="manifest.webmanifest" />
     <meta name="theme-color" content="#6a3ea1" />
     <link rel="apple-touch-icon" href="images/artmatch-192.png">
 
@@ -28,7 +28,7 @@
 
   <body>
     <div id="root"></div>
-    <script type="module" src="src/main.tsx"></script>
+    <script type="module" src="/src/main.tsx"></script>
     <script>
       if ('serviceWorker' in navigator) {
         window.addEventListener('load', () => {
